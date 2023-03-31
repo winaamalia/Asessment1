@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base2"
+    tools:context=".Register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header"
+            android:orientation="vertical"
+            android:paddingTop="48dp"
+            android:paddingBottom="48dp">
+
+            <TextView
+                android:id="@+id/tv_judul_aplikasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Aplikasi Pencatatan Biodata"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_round2"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingTop="24dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="48dp">
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp"
+                android:text="REGISTRASI"
+                android:textAlignment="center"
+                android:textColor="#3F51B5"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_label_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
+                android:textColor="#3F51B5"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txtNama"
+                android:background="@drawable/border2"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="12dp"
+                android:textColorHint="@color/efek"
+                android:textColor="@color/font1"
+                android:hint="Nama Lengkap"
+                android:textColorHighlight="#43A047"
+                android:textColorLink="#4CAF50"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_label_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Username"
+                android:textColor="#3F51B5"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:background="@drawable/border2"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:hint="Username"
+                android:textColorHint="@color/efek"
+                android:textColor="@color/font1"
+                android:inputType="textEmailAddress"
+                android:textColorHighlight="#43A047"
+                android:textColorLink="#4CAF50"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_label_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Alamat"
+                android:textColor="#3F51B5"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txtAlamat"
+                android:layout_width="match_parent"
+                android:background="@drawable/border2"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:hint="Alamat"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/efek"
+                android:textColor="@color/font1"
+                android:textColorHighlight="#43A047"
+                android:textColorLink="#4CAF50"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_label_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Password"
+                android:textColor="#3F51B5"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:background="@drawable/border2"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:hint="Password"
+                android:textColorHint="@color/efek"
+                android:textColor="@color/font1"
+                android:inputType="textPassword"
+                android:textColorHighlight="#43A047"
+                android:textColorLink="#4CAF50"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_label_ulangi_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Ulangi Password"
+                android:textColor="#3F51B5"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txtUlangiPassword"
+                android:layout_width="match_parent"
+                android:background="@drawable/border2"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:hint="Ulangi Password"
+                android:textColorHint="@color/efek"
+                android:textColor="@color/font1"
+                android:inputType="textPassword"
+                android:textColorHighlight="#43A047"
+                android:textColorLink="#4CAF50"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:backgroundTint="@null"
+                android:background="@drawable/bg_round1"
+                android:text="DAFTAR"
+                android:textColor="#FFFFFF"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
